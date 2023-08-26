@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Amazon</title>
+</head>
+
+<body>
+    <!-- header starts here -->
+    <header id="top">
+        <div class="upper-header d-flex align-items-center justify-content-between">
+            <div class="left d-flex align-items-center justify">
+                <a href="index.html">
+                    <h1>amazon<span>.in</span></h1>
+                </a>
+                <a href="#" class="location d-flex align-items-center">
+                    <i class="bi bi-geo-alt text-white"></i>
+                    <div class="select-address d-flex flex-column">
+                        <span>Hello</span>
+                        <span class="lower-text">Select your address</span>
+                    </div>
+                </a>
+            </div>
+            <div class="middle d-flex align-items-center">
+                <select name="category" id="category">
+                    <option value="All" selected hidden>All</option>
+                    <option value="Baby">Baby</option>
+                    <option value="Baby">Baby</option>
+                    <option value="Baby">Baby</option>
+                    <option value="Baby">Baby</option>
+                </select>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+                <button><i class="bi bi-search"></i></button>
+            </div>
+            <div class="right d-flex align-items-center">
+                <div class="language d-flex">
+                    <img src="image/flag-indian.png" alt="">
+                    <span class="text-white fw-bold ms-1 mt-1">EN</span>
+                    <i class="bi bi-caret-down-fill mt-1"></i>
+                </div>
+                <a href="login.html" class="account d-flex flex-column">
+                    <span>Hello, sign in</span>
+                    <span class="lower-text">Accounts & Lists<i class="bi bi-caret-down-fill"></i></span>
+                </a>
+                <a href="#" class="return d-flex flex-column">
+                    <span>Return</span>
+                    <span class="lower-text">& Orders</span>
+                </a>
+                <a href="cart.html" class="cart"><i class="bi bi-cart3"></i><span>Cart</span></a>
+            </div>
+            <button class="menubtn me-1"><i class="bi bi-list"></i></button>
+        </div>
+        <div class="lower-header d-flex align-items-center justify-content-between">
+            <div class="left d-flex align-items-center">
+                <div href="#" class="menu">
+                    <i class="bi bi-list"></i>
+                    <span>All</span>
+                </div>
+                <ul class="d-flex align-items-center m-0 p-0">
+                    <li><a href="#">Sell</a></li>
+                    <li><a href="#">BestSellers</a></li>
+                    <li><a href="#">Today's Deals</a></li>
+                    <li><a href="#">Mobiles</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Electronics </a></li>
+                    <li><a href="#">Home & Kitchen</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">Prime<i class="bi bi-caret-down-fill"></i></a></li>
+                </ul>
+            </div>
+            <a href="#" class="app-download"><img src="image/app-download.jpg" alt=""></a>
+        </div>
+        <div class="side-menu">
+            <div class="menu-wrapper">
+                <div class="head d-flex align-items-center gap-2">
+                    <div class="dp">
+                        <img src="image/user.png" alt="">
+                    </div>
+                    <h4 class="text-white m-0">Hello, sign in</h4>
+                </div>
+                <div class="menu-list">
+                    <ul class="menu-cat p-0 m-0 border-bottom">
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">Best Seller</a></li>
+                        <li><a href="#">New Releases</a></li>
+                        <li><a href="#">Movers and Shakers</a></li>
+                    </ul>
+                    <ul class="menu-cat p-0 m-0 border-bottom">
+                        <li><a href="#">Digital Content And Devices</a></li>
+                        <li><a href="#">Amazon miniTV-FREE entertainment</a></li>
+                        <li><a href="#">Echo & Alexa</a><i class="bi bi-chevron-right"></i></li>
+                        <li><a href="#">Fire TV</a><i class="bi bi-chevron-right"></i></li>
+                        <li><a href="#">Audible Audiobooks</a><i class="bi bi-chevron-right"></i></li>
+                        <li><a href="#">Amazon Prime Video</a><i class="bi bi-chevron-right"></i></li>
+                        <li class="justify-content-start gap-2"><a href="#">See more</a><i
+                                class="bi bi-chevron-down"></i></li>
+                    </ul>
+                    <ul class="menu-cat p-0 m-0 border-bottom">
+                        <li><a href="#">Help & Settings</a></li>
+                        <li><a href="#">Your Account</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Return & Order</a></li>
+                        <li><a href="cart.html">Your cart</a></li>
+                        <li><a href="login.html">Sign in</a></li>
+                    </ul>
+                </div>
+                <button class="closebtn"><i class="bi bi-plus"></i></button>
+            </div>
+        </div>
+    </header>
+    <!-- header ends here -->
+
+    <main class="bg-white">
+        <!-- navigation-btn starts here -->
+        <div class="navigation d-flex align-items-center gap-1 px-3 pt-2">
+            <a href="#">Electronics</a>
+            <i class="bi bi-chevron-right"></i>
+            <a href="#">Mobiles & Accessories</a>
+            <i class="bi bi-chevron-right"></i>
+            <a href="#">Smartphones</a>
+        </div>
+        <!-- navigation-btn ends here -->
+
+        <!-- product-desc-section starts here -->
+        <div class="product-description container-fluid bg-white pb-3">
+            <div class="row pt-4">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="d-flex gap-2">
+                        <div class="gallery d-flex flex-column gap-2">
+                            <div class="screenshot">
+                                <img src="image/img-small.jpg" alt="">
+                            </div>
+                            <div class="screenshot">
+                                <img src="image/img-small.jpg" alt="">
+                            </div>
+                            <div class="screenshot">
+                                <img src="image/img-small.jpg" alt="">
+                            </div>
+                            <div class="screenshot">
+                                <img src="image/img-small.jpg" alt="">
+                            </div>
+                            <div class="screenshot">
+                                <img src="image/img-small.jpg" alt="">
+                            </div>
+                            <div class="screenshot">
+                                <img src="image/img-small.jpg" alt="">
+                            </div>
+                            <div class="screenshot">
+                                <img src="image/img-small.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="image-preview d-flex align-items-center">
+                            <img src="image/img-big.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <span class="text-muted">Roll over image to zoom in</span>
+                    </div>
+                </div>
+                <div class="details col-lg-4 col-md-12 col-sm-12">
+                    <h5 class="m-0 fw-normal">Samsung Galaxy M33 5G (Mystique Green, 6GB, 128GB Storage) | 6000mAh
+                        Battery | Upto 12GB RAM with RAM Plus | Travel Adapter to be Purchased Separately</h5>
+                    <a href="#">Visit the Samsung Store</a>
+                    <div class="rating d-flex align-items-center gap-2 border-bottom">
+                        <div class="star d-flex align-items-center ps-1">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-chevron-down ps-2"></i>
+                        </div>
+                        <a href="#" class="ps-3">19,007 ratings</a>
+                        <span class="text-gray">|</span>
+                        <a href="#">1000+ answered questions</a>
+                    </div>
+                    <div class="pricing mt-3">
+                        <span class="percentage fw-light">-24%</span>
+                        <span class="price"><sup>&#8377</sup>18,999<sup>00</sup></span>
+                    </div>
+                    <span class="mrp d-block mb-2">M.R.P.:<span class="text-decoration-line-through">&#8377
+                            24,999.00</span></span>
+                    <div class="emi d-flex flex-column  ">
+                        <span>Inclusive of all taxes</span>
+                        <span><b>EMI</b> starts at &#8377 908. No Cost EMI available <a href="#">EMI options<i
+                                    class="bi bi-chevron-down ps-2"></i></a></span>
+                    </div>
+                    <div class="offers border rounded mt-2">
+                        <div class="save-extra">
+                            <img src="image/discount.png" alt="">
+                            <span class="pb-2"><span class="save fw-bold">Save Extra</span> with 4 offers</span>
+                        </div>
+                        <div class="bank-offer border-top">
+                            <span><span class="save fw-bold">Bank Offer (2):</span> Flat INR 2000 Instant Discount on
+                                SBI Credit CardTxn. Minimum purchase value INR 10000 | <a href="#">See All</a></span>
+                        </div>
+                        <div class="bank-offer border-top">
+                            <span><span class="save fw-bold">No Cost EMI:</span> Avail No Cost EMI on select cards for
+                                orders above &#8377 3000 | <a href="#">Details</a></span>
+                        </div>
+                        <div class="bank-offer border-top">
+                            <i class="bi bi-chevron-down"></i>
+                            <a href="#">See 2 more</a>
+                        </div>
+                    </div>
+                    <div class="feature d-flex mt-3 justify-content-between border-bottom">
+                        <a href="#" class="single-feature d-flex flex-column align-items-center">
+                            <img src="image/icon-cod.png" alt="">
+                            <span class="mt-2">Pay on Delivery</span>
+                        </a>
+                        <a href="#" class="single-feature d-flex flex-column align-items-center">
+                            <img src="image/icon-return.png" alt="">
+                            <span class="text-center mt-2">7 days<br> Replacement</span>
+                        </a>
+                        <a href="#" class="single-feature d-flex flex-column align-items-center">
+                            <img src="image/icon-cod.png" alt="">
+                            <span class="text-center mt-2">Amazon<br> Delivered</span>
+                        </a>
+                        <a href="#" class="single-feature d-flex flex-column align-items-center">
+                            <img src="image/icon-warranty.png" alt="">
+                            <span class="mt-2">1 Year Warranty</span>
+                        </a>
+                    </div>
+                    <div class="variant mt-3">
+                        <span>Colour: <b>Mystique Green</b></span>
+                        <div class="variant-image d-flex gap-2 mt-2 mb-2">
+                            <img src="image/img-small2.jpg" class="border" alt="">
+                            <img src="image/img-small2.jpg" class="border" alt="">
+                            <img src="image/img-small2.jpg" class="border selected" alt="">
+                        </div>
+                        <span>Size name: <b>8GB+128GB</b></span>
+                        <div class="memory-variant d-flex gap-2 mt-2">
+                            <span class="border selected fw-bold text-dark">6GB+128GB</span>
+                            <span class="border">8GB+128GB</span>
+                        </div>
+                    </div>
+                    <table class="info-table table-borderless my-2">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Brand</th>
+                                <td>Samsung</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Model Name</th>
+                                <td>Samsung Galaxy M33 5G</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Network Service<br>Provider</th>
+                                <td>Unlocked for All Carriers</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">OS</th>
+                                <td>Android 12.0</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Cellular<br>Technology</th>
+                                <td>5G</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="about-item border-top pt-2">
+                        <h5 class="fw-bold m-0">About this item</h5>
+                        <ul class="mb-0">
+                            <li>Exynos 1280 Octa Core 2.4GHz 5nm Processor with the 12 band support for a True 5G
+                                experience</li>
+                            <li>16.72 centimeters (6.6-inch) LCD Display, FHD+ resolution, 1080x2400 pixels protected by
+                                Gorilla Glass 5</li>
+                            <li>Versatile Quad camera setup-50MP (F1.8)+ 5MP (F2.2/UW- 123 FOV) + 2MP (F2.4/Depth) + 2MP
+                                (F2.4/Macro) QuadCamera| 8MP (F1.8) Front Camera</li>
+                            <li>Massive 6000 mAh Battery | Memory, Storage & SIM: 6GB RAM | 128GB internal memory
+                                expandable up to 1TB| SIM 1 + SIM 2+ Micro SD</li>
+                            <li>Latest Android v12.0, One UI 4 operating system.</li>
+                            <li>Intelligent Voice Focus | Power Cool Technology | Auto Data Switching</li>
+                            <li>Connector type: 3.5mm jack</li>
+                        </ul>
+                        <span class="more-details"><i class="bi bi-chevron-right pe-1"></i><a href="#">See more product
+                                details</a></span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <div class="buy-now border rounded">
+                        <div class="form-check border-bottom">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label fw-bold" for="flexRadioDefault1">
+                                With Exchange
+                            </label>
+                            <span class="rate d-block">Up to &#8377;13,300.00 off</span>
+                        </div>
+                        <div class="form-check bg-transparent">
+                            <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label fw-bold" for="flexRadioDefault1">
+                                Without Exchange
+                            </label>
+                            <span class="rate d-block fw-bold">&#8377;18,999.00<span
+                                    class="fw-bold text-black-50 text-decoration-line-through">&#8377
+                                    24,999.00</span></span>
+                            <div class="delivery-option mt-3">
+                                <div><a href="#">FREE delivery </a><b>Saturday, 26 November.</b> Order Within <span
+                                        class="text-success">22
+                                        hrs 48 mins.</span><a href="#">Details</a>
+                                </div>
+                                <a href="#" class="location d-block my-2"><i
+                                        class="bi bi-geo-alt pe-2 text-dark"></i>Select delivery location</a>
+                                <span class="in-stock text-success">In stock.</span>
+                                <div class="mt-1">Sold by <a href="#">STPL Exclusive Online</a> and <a
+                                        href="#">Fulfilled by Amazon.</a>
+                                </div>
+                                <div class="additional mt-2">
+                                    <form action="" class="mb-3">
+                                        <h1>Add a Protection Plan:</h1>
+                                        <div class="form-check bg-transparent">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                <a href="#">Samsung Care+ Screen Protection Plan for 6 Month - Mid Range
+                                                    Samsung Smartphones</a> for <span class="rate">₹399.00</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check bg-transparent">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                <a href="#">Acko 1-year Total Damage Protection for ₹1,099.00</a> for
+                                                <span class="rate">₹1,099.00</span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check bg-transparent">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                <a href="#">Quess Care Total Protection Plan for 1 Year Protection for
+                                                    Mobile - Price Between 15001 to 20000 (Email Delivery)</a> for <span
+                                                    class="rate">₹799.00</span>
+                                            </label>
+                                        </div>
+                                        <input type="submit" class="d-block addcartbtn mt-2" value="Add to Cart">
+                                        <input type="submit" class="buybtn mt-2" value="Buy Now">
+                                    </form>
+                                    <span class="secure"><i class="bi bi-lock-fill pe-3"></i><a href="#">Secure
+                                            transaction</a></span>
+                                    <div class="form-check bg-transparent mt-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Add gift options
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wishlist border-top text-center my-3 ms-4">
+                        <button class="wishlistBtn mt-3 w-100 py-1 mb-1" type="submit">Add to Wish List</button>
+                        <span class="d-block">Have one to sell?</span>
+                        <button class="sellbtn">Sell on Amazon</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- product-desc-section ends here -->
+
+        <!-- manufacturer-section starts here -->
+        <div class="manufacturer container-fluid pb-1">
+            <h1 class="fw-bold border-top pt-2">From the manfacturer</h1>
+            <div class="owl-carousel owl-theme" id="product-slider">
+                <div class="item"><img src="image/img-slider.jpg" alt=""></div>
+                <div class="item"><img src="image/img-slider-2.jpg" alt=""></div>
+                <div class="item"><img src="image/img-slider-2.jpg" alt=""></div>
+            </div>
+        </div>
+        <!-- manufacturer-section ends here -->
+
+        <!-- whats in-box section starts here -->
+        <div class="in-box container-fluid pb-1">
+            <h1 class="fw-bold border-top pt-2">What's in the box?</h1>
+            <ul>
+                <li>Handset, Ejection Pin,Data Cable,Quick Start Guide</li>
+            </ul>
+        </div>
+        <!-- whats in-box section ends here -->
+
+        <!-- qna section starts here -->
+        <div class="qna container-fluid pb-3">
+            <h1 class="fw-bold border-top pt-2">Customer questions & answers</h1>
+            <div class="d-flex pb-4">
+                <div class="vote d-flex flex-column text-center border-end px-3">
+                    <i class="bi bi-caret-up-fill"></i>
+                    <span>1</span>
+                    <span>vote</span>
+                    <i class="bi bi-caret-down-fill"></i>
+                </div>
+                <div class="ques-ans ps-2">
+                    <table class="table-borderless">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Question:</th>
+                                <td><a href="#">Does it support samsung tv sound mirroring and tv sound to mobile?</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Answer:</th>
+                                <td>
+                                    <p class="m-0">"Dear Customer,<br>
+                                        Galaxy M33 5G has a Smart view feature which allows you to view your device’s
+                                        displayed content on a large screen by connecting your device to a screen
+                                        mirroring-enabled TV or monitor. Hope this is of help.
+                                        Regards…<a href="#">see more</a></p>
+                                    <span class="text-muted">By Samsung India <span
+                                            class="brand fw-bold text-uppercase">Manufacturer</span> on 21 June,
+                                        2022</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="d-flex pb-4">
+                <div class="vote d-flex flex-column text-center border-end px-3">
+                    <i class="bi bi-caret-up-fill"></i>
+                    <span>1</span>
+                    <span>vote</span>
+                    <i class="bi bi-caret-down-fill"></i>
+                </div>
+                <div class="ques-ans ps-2">
+                    <table class="table-borderless">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Question:</th>
+                                <td><a href="#">Does it support samsung tv sound mirroring and tv sound to mobile?</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Answer:</th>
+                                <td>
+                                    <p class="m-0">"Dear Customer,<br>
+                                        Galaxy M33 5G has a Smart view feature which allows you to view your device’s
+                                        displayed content on a large screen by connecting your device to a screen
+                                        mirroring-enabled TV or monitor. Hope this is of help.
+                                        Regards... <a href="#">see more</a></p>
+                                    <span class="text-muted">By Samsung India <span
+                                            class="brand fw-bold text-uppercase">Manufacturer</span> on 21 June,
+                                        2022</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <button class="more-ques">See more answered questions (996)</button>
+        </div>
+        <!-- qna section starts here -->
+
+        <!-- search-ques section starts here -->
+        <div class="search-ques container-fluid pb-3">
+            <h1 class="fw-bold mb-1">Looking for specific info?</h1>
+            <span class="d-block text-muted">Search product info, Q&A, reviews</span>
+            <input type="text" class="my-2" placeholder="Type a keyword">
+        </div>
+        <!-- search-ques section starts here -->
+
+        <!-- review section starts here -->
+        <div class="reviews container-fluid">
+            <div class="row gap-5">
+                <div class="left col-lg-3 col-md-12 col-sm-12">
+                    <div class="customer-review border-bottom">
+                        <h2 class="fw-bold mb-1">Customer reviews</h2>
+                        <div class="rating d-flex align-items-center gap-3 mb-1">
+                            <div class="star d-flex align-items-center">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <span>4.5 out of 5</span>
+                        </div>
+                        <span class="rating-count text-muted">19,144 global ratings</span>
+                        <div class="rating-stats d-flex flex-column">
+                            <a href="#" class="single-stats d-flex gap-2 mt-3">
+                                <span>5 star</span>
+                                <div class="progress-bar">
+                                    <div class="bar-meter"></div>
+                                </div>
+                                <span id="bar-value">52%</span>
+                            </a>
+                            <a href="#" class="single-stats d-flex gap-2 mt-3">
+                                <span>5 star</span>
+                                <div class="progress-bar">
+                                    <div class="bar-meter"></div>
+                                </div>
+                                <span id="bar-value">52%</span>
+                            </a>
+                            <a href="#" class="single-stats d-flex gap-2 mt-3">
+                                <span>5 star</span>
+                                <div class="progress-bar">
+                                    <div class="bar-meter"></div>
+                                </div>
+                                <span id="bar-value">52%</span>
+                            </a>
+                            <a href="#" class="single-stats d-flex gap-2 mt-3">
+                                <span>5 star</span>
+                                <div class="progress-bar">
+                                    <div class="bar-meter"></div>
+                                </div>
+                                <span id="bar-value">52%</span>
+                            </a>
+                            <a href="#" class="single-stats d-flex gap-2 mt-3">
+                                <span>5 star</span>
+                                <div class="progress-bar">
+                                    <div class="bar-meter"></div>
+                                </div>
+                                <span id="bar-value">52%</span>
+                            </a>
+                        </div>
+                        <div class="my-2">
+                            <a href="#"><i class="bi bi-chevron-down text-dark pe-1"></i> How are ratings calculated?</a>
+                        </div>
+                    </div>
+                    <div class="by-feature mt-3 border-bottom">
+                        <h2 class="fw-bold mb-1">By feature</h2>
+                        <div class="feature-rating mt-2">
+                            <div class="single-feature mt-2 d-flex justify-content-between align-items-center">
+                                <span>Battery life</span>
+                                <div class="rating d-flex align-items-center gap-1 mb-1">
+                                    <div class="star d-flex align-items-center">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </div>
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                            <div class="single-feature mt-2 d-flex justify-content-between align-items-center">
+                                <span>Fingerprint reader</span>
+                                <div class="rating d-flex align-items-center gap-1 mb-1">
+                                    <div class="star d-flex align-items-center">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </div>
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                            <div class="single-feature mt-2 d-flex justify-content-between align-items-center">
+                                <span>Face recognition</span>
+                                <div class="rating d-flex align-items-center gap-1 mb-1">
+                                    <div class="star d-flex align-items-center">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </div>
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-2">
+                            <a href="#"><i class="bi bi-chevron-down pe-1 text-dark pe-1"></i>See more</a>
+                        </div>
+                    </div>
+                    <div class="rate-product border-bottom">
+                        <h2 class="fw-bold mt-4 mb-1">Rate this product</h2>
+                        <span class="text-muted">Share your thoughts with other customers</span>
+                        <button class="write-review w-100 mt-2 mb-4">Write a product review</button>
+                    </div>
+                </div>
+                <div class="right col-lg-6 col-md-12 col-sm-12 ps-5">
+                    <div class="image-review">
+                        <h2 class="fw-bold">Reveiw with images</h2>
+                        <div class="images d-flex gap-1">
+                            <div class="single-image"><img src="image/card-2.jpg" alt=""></div>
+                            <div class="single-image"><img src="image/card-2.jpg" alt=""></div>
+                            <div class="single-image"><img src="image/card-2.jpg" alt=""></div>
+                        </div>
+                        <div class="my-2">
+                            <a href="#" >See all customer images</a>
+                        </div>
+                    </div>
+                    <div class="read-review mt-3">
+                        <h2 class="fw-bold">Read reviews that mention</h2>
+                        <div class="feature d-flex gap-2 flex-wrap">
+                            <a href="#" class="text-decoration-none">battery life</a>
+                            <a href="#" class="text-decoration-none">camera quality</a>
+                            <a href="#" class="text-decoration-none">price range</a>
+                            <a href="#" class="text-decoration-none">battery backup</a>
+                            <a href="#" class="text-decoration-none">Value for money</a>
+                            <a href="#" class="text-decoration-none">waste of money</a>
+                            <a href="#" class="text-decoration-none">refresh rate</a>
+                        </div>
+                    </div>
+                    <div class="top-review mt-4">
+                        <h2 class="fw-bold">Top reviews from India</h2>
+                        <div class="mt-3">
+                            <div class="profile d-flex align-items-center">
+                                <img src="image/user.png" alt="">
+                                <span class="name ps-2">Lalit Kumar</span>
+                            </div>
+                            <div class="user-rating pt-1">
+                                <div class="rating d-flex align-items-center gap-1 mb-1">
+                                    <div class="star d-flex align-items-center">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </div>
+                                    <a href="#" class="text-decoration-none text-dark fw-bold ps-2">THE PERFECT PHONE - FOR MY REQUIREMENT</a>
+                                </div>
+                                <span class="text-muted">Reviewed in India 🇮🇳 on 15 August 2022</span>
+                                <div class="device-detail text-muted">
+                                    <span>Colour:Mystique Green | </span>
+                                    <span>Size name:8GB+128GB | </span>
+                                    <span class="verify fw-bolder">Verified Purchase</span>
+                                </div>
+                                <p class="mt-1 mb-0">I would not consider buying an i-phone simply because my friend owns two of them – or blindly go for a new Android model suggested by my son or nephew (both of whom are more tech savvy than me) because their recommendations are obviously based on their own needs and expectations, which may differ from mine. I am an old-fashioned mechanical engineer with a basic understanding of parameters like millimetres, megapixels and megabytes – but I think of a cellphone as a utility item, not a status symbol. Applying a technocratic approach, I would not choose a costlier option unless I get additional features which suit my requirements.
+                                </p>
+                                <a href="#" class="d-flex align-items-center"><i class="bi bi-chevron-down text-dark pe-1"></i>Read more</a>
+                            </div>
+                            <span class="text-muted">997 people found this helpful</span>
+                            <div class="d-flex align-items-center gap-2 my-2">
+                                <button class="helpfulbtn px-4">Helpful</button>
+                                <span class="text-muted">|</span>
+                                <span><a href="#" class="text-decoration-none text-muted">Report abuse</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- review section ends here -->
+    </main>
+    
+    <!-- footer starts here -->
+    <footer>
+        <div class="upper-footer d-flex justify-content-center">
+            <a href="#top" class="d-block text-decoration-none">Back to top</a>
+        </div>
+        <div class="main-footer">
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="row my-5">
+                            <div class="footer-links col-lg-3 col-md-6 col-sm-6 col-12">
+                                <h5 class="text-white">Get to Know Us</h5>
+                                <ul class="p-0">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Press Releases</a></li>
+                                    <li><a href="#">Amazon Science</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-links col-lg-3 col-md-6 col-sm-6 col-12">
+                                <h5 class="text-white">Connect with Us</h5>
+                                <ul class="p-0">
+                                    <li><a href="#">Facebook</a></li>
+                                    <li><a href="#">Twitter</a></li>
+                                    <li><a href="#">Instagram</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-links col-lg-3 col-md-6 col-sm-6 col-12">
+                                <h5 class="text-white">Make Money with Us</h5>
+                                <ul class="p-0">
+                                    <li><a href="#">Sell on Amazon</a></li>
+                                    <li><a href="#">Sell under Amazon Accelerator</a></li>
+                                    <li><a href="#">Amazon Global Selling</a></li>
+                                    <li><a href="#">Become an Affiliate</a></li>
+                                    <li><a href="#">Fulfilment by Amazon</a></li>
+                                    <li><a href="#">Advertise Your Products</a></li>
+                                    <li><a href="#">Amazon Pay on Merchants</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-links col-lg-3 col-md-6 col-sm-6 col-12">
+                                <h5 class="text-white">Let Us Help You</h5>
+                                <ul class="p-0">
+                                    <li><a href="#">COVID-19 and Amazon</a></li>
+                                    <li><a href="#">Your Account</a></li>
+                                    <li><a href="#">Return Centre</a></li>
+                                    <li><a href="#">100% Purchase Protection</a></li>
+                                    <li><a href="#">Amazon App Download</a></li>
+                                    <li><a href="#">Amazon Assistant Download</a></li>
+                                    <li><a href="#">Help</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle-footer py-4">
+            <div class="lang d-flex justify-content-center align-items-center ">
+                <h4 class="m-0"><a href="#" class="text-white text-decoration-none">amazon</a></h4>
+                <div class="lang-select d-flex align-items-center">
+                    <i class="bi bi-globe2 me-2"></i>
+                    <span>English</span>
+                    <i class="bi bi-chevron-contract ms-4"></i>
+                </div>
+            </div>
+            <div class="footer-country text-center d-block mt-4">
+                <a href="#">Australia</a>
+                <a href="#">Brazil</a>
+                <a href="#">Canada</a>
+                <a href="#">China</a>
+                <a href="#">France</a>
+                <a href="#">Germany</a>
+                <a href="#">Italy</a>
+                <a href="#">Japan</a>
+                <a href="#">Mexico</a>
+                <a href="#">Netherlands</a>
+                <a href="#">Poland</a>
+                <a href="#">Singapore</a>
+                <a href="#">Spain</a>
+                <a href="#">Turkey</a>
+                <a href="#">United Arab Emirates</a><br>
+                <a href="#">United Knigdom</a>
+                <a href="#">United States</a>
+            </div>
+        </div>
+        <div class="lower-footer">
+            <div class="container-fluid">
+                <div class="brand-list row d-flex justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-6 col-sm-6">
+                                <a href="#" class="brand-links d-flex flex-column">
+                                    <span class="title">AbeBooks</span>
+                                    <span>Books, art<br>& collectibles</span>
+                                </a>
+                                <a href="#" class="brand-links d-flex flex-column mt-3">
+                                    <span class="title">Shopbop</span>
+                                    <span>Designer<br>Fashion Brands</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <a href="#" class="brand-links d-flex flex-column">
+                                    <span class="title">Amazon Web Serviecs</span>
+                                    <span>Scalable cloud<br>Computing Services</span>
+                                </a>
+                                <a href="#" class="brand-links d-flex flex-column mt-3">
+                                    <span class="title">Amazon Business</span>
+                                    <span>Everything For<br>Your Business</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6">
+                                <a href="#" class="brand-links d-flex flex-column">
+                                    <span class="title">Audible</span>
+                                    <span>Download<br>Audio Books</span>
+                                </a>
+                                <a href="#" class="brand-links d-flex flex-column mt-3">
+                                    <span class="title">Prime Now</span>
+                                    <span>2-Hour Delivery<br>on Everyday Itmes</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <a href="#" class="brand-links d-flex flex-column">
+                                    <span class="title">DPReveiw</span>
+                                    <span>Digital<br>Photography</span>
+                                </a>
+                                <a href="#" class="brand-links d-flex flex-column mt-3">
+                                    <span class="title">Amazon Prime Music</span>
+                                    <span>90 million songs, ad-free<br>Over 15 million podcast episodes</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6">
+                                <a href="#" class="brand-links d-flex flex-column">
+                                    <span class="title">IMDb</span>
+                                    <span>Movies, TV<br>& celebrities</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright d-flex align-items-center flex-column">
+                    <div class="d-flex gap-3">
+                        <a href="#">Conditions of Use & Sale</a>
+                        <a href="#">Privacy Notice</a>
+                        <a href="#">Interest-Based Ads</a>
+                    </div>
+                    <p class="m-0">&#169; 1996-2022, Amazon.com, Inc. its affiliates</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer ends here -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
